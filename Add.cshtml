@@ -1,0 +1,20 @@
+﻿@model mycore.Models.EmpModel
+
+
+
+@using (Html.BeginForm("Add", "Home",  FormMethod.Post))
+{
+    @Html.HiddenFor(i=>i.Id)
+
+<div>
+    <span>Enter email</span>
+    @Html.TextBoxFor(e=>e.Name ,new {@placeholder="name"})
+    </div>
+
+    <div>
+        <span>Enter email</span>
+    @Html.TextBoxFor(e=>e.Name,new {@placeholder ="email"})
+
+    </div>
+    <input type="submit">
+}
